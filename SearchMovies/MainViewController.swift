@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import Foundation
 
-class ViewController: UIViewController {
 
+class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+      
     }
 
-
+   
 }
-
