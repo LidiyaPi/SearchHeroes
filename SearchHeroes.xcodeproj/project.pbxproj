@@ -14,8 +14,8 @@
 		5054193A2C248B5300996A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505419382C248B5300996A48 /* Main.storyboard */; };
 		5054193C2C248B5600996A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5054193B2C248B5600996A48 /* Assets.xcassets */; };
 		5054193F2C248B5600996A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5054193D2C248B5600996A48 /* LaunchScreen.storyboard */; };
-		50EA91352C282CDC008F6779 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA91342C282CDC008F6779 /* MoviesModel.swift */; };
-		50EA91372C282E4E008F6779 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA91362C282E4E008F6779 /* MovieCollectionViewCell.swift */; };
+		50EA91352C282CDC008F6779 /* HeroesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA91342C282CDC008F6779 /* HeroesModel.swift */; };
+		50EA91372C282E4E008F6779 /* HeroesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA91362C282E4E008F6779 /* HeroesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		5054193B2C248B5600996A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5054193E2C248B5600996A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		505419402C248B5600996A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50EA91342C282CDC008F6779 /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
-		50EA91362C282E4E008F6779 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		50EA91342C282CDC008F6779 /* HeroesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesModel.swift; sourceTree = "<group>"; };
+		50EA91362C282E4E008F6779 /* HeroesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 		5043FBE72C301C1900130C77 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				50EA91362C282E4E008F6779 /* MovieCollectionViewCell.swift */,
+				50EA91362C282E4E008F6779 /* HeroesCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -62,7 +62,7 @@
 		5043FBE82C301C2B00130C77 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				50EA91342C282CDC008F6779 /* MoviesModel.swift */,
+				50EA91342C282CDC008F6779 /* HeroesModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -88,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				505419342C248B5300996A48 /* SceneDelegate.swift */,
-				5054193B2C248B5600996A48 /* Assets.xcassets */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -97,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				505419312C248B5300996A48 /* SearchHeroes */,
+				505419322C248B5300996A48 /* AppDelegate.swift */,
+				5054193B2C248B5600996A48 /* Assets.xcassets */,
 				505419302C248B5300996A48 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,7 +119,6 @@
 				5043FBE92C301C3600130C77 /* Services */,
 				5043FBEA2C301C5700130C77 /* Storyboards */,
 				5043FBEB2C301C7700130C77 /* App */,
-				505419322C248B5300996A48 /* AppDelegate.swift */,
 				505419402C248B5600996A48 /* Info.plist */,
 			);
 			path = SearchHeroes;
@@ -196,9 +196,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5043FBE52C301AFF00130C77 /* NetworkManager.swift in Sources */,
-				50EA91352C282CDC008F6779 /* MoviesModel.swift in Sources */,
+				50EA91352C282CDC008F6779 /* HeroesModel.swift in Sources */,
 				505419372C248B5300996A48 /* MainViewController.swift in Sources */,
-				50EA91372C282E4E008F6779 /* MovieCollectionViewCell.swift in Sources */,
+				50EA91372C282E4E008F6779 /* HeroesCollectionViewCell.swift in Sources */,
 				505419332C248B5300996A48 /* AppDelegate.swift in Sources */,
 				505419352C248B5300996A48 /* SceneDelegate.swift in Sources */,
 			);

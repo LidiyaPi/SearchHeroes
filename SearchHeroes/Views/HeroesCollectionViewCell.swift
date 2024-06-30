@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MovieCollectionViewCell: UICollectionViewCell {
+class HeroesCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet var genreLabel: UILabel!
 }

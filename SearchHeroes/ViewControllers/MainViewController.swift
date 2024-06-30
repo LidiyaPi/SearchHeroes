@@ -25,7 +25,7 @@ final class MainViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCell", for: indexPath)
-        guard let cell = cell as? MovieCollectionViewCell else {
+        guard let cell = cell as? HeroesCollectionViewCell else {
              return cell
          }
         cell.genreLabel.text = superHero[indexPath.item].name
