@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5043FBE52C301AFF00130C77 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043FBE42C301AFF00130C77 /* NetworkManager.swift */; };
 		505419332C248B5300996A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505419322C248B5300996A48 /* AppDelegate.swift */; };
 		505419352C248B5300996A48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505419342C248B5300996A48 /* SceneDelegate.swift */; };
 		505419372C248B5300996A48 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505419362C248B5300996A48 /* MainViewController.swift */; };
@@ -18,7 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5054192F2C248B5300996A48 /* SearchMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5043FBE42C301AFF00130C77 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5054192F2C248B5300996A48 /* SearchHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505419322C248B5300996A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		505419342C248B5300996A48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		505419362C248B5300996A48 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -41,10 +43,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5043FBE62C301C0B00130C77 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				505419362C248B5300996A48 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5043FBE72C301C1900130C77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50EA91362C282E4E008F6779 /* MovieCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5043FBE82C301C2B00130C77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50EA91342C282CDC008F6779 /* MoviesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5043FBE92C301C3600130C77 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5043FBE42C301AFF00130C77 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5043FBEA2C301C5700130C77 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				505419382C248B5300996A48 /* Main.storyboard */,
+				5054193D2C248B5600996A48 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5043FBEB2C301C7700130C77 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				505419342C248B5300996A48 /* SceneDelegate.swift */,
+				5054193B2C248B5600996A48 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		505419262C248B5300996A48 = {
 			isa = PBXGroup;
 			children = (
-				505419312C248B5300996A48 /* SearchMovies */,
+				505419312C248B5300996A48 /* SearchHeroes */,
 				505419302C248B5300996A48 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,33 +104,32 @@
 		505419302C248B5300996A48 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5054192F2C248B5300996A48 /* SearchMovies.app */,
+				5054192F2C248B5300996A48 /* SearchHeroes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		505419312C248B5300996A48 /* SearchMovies */ = {
+		505419312C248B5300996A48 /* SearchHeroes */ = {
 			isa = PBXGroup;
 			children = (
-				50EA91342C282CDC008F6779 /* MoviesModel.swift */,
-				50EA91362C282E4E008F6779 /* MovieCollectionViewCell.swift */,
-				505419362C248B5300996A48 /* MainViewController.swift */,
-				505419382C248B5300996A48 /* Main.storyboard */,
-				5054193D2C248B5600996A48 /* LaunchScreen.storyboard */,
+				5043FBE62C301C0B00130C77 /* ViewControllers */,
+				5043FBE72C301C1900130C77 /* Views */,
+				5043FBE82C301C2B00130C77 /* Models */,
+				5043FBE92C301C3600130C77 /* Services */,
+				5043FBEA2C301C5700130C77 /* Storyboards */,
+				5043FBEB2C301C7700130C77 /* App */,
 				505419322C248B5300996A48 /* AppDelegate.swift */,
-				505419342C248B5300996A48 /* SceneDelegate.swift */,
-				5054193B2C248B5600996A48 /* Assets.xcassets */,
 				505419402C248B5600996A48 /* Info.plist */,
 			);
-			path = SearchMovies;
+			path = SearchHeroes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5054192E2C248B5300996A48 /* SearchMovies */ = {
+		5054192E2C248B5300996A48 /* SearchHeroes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 505419432C248B5600996A48 /* Build configuration list for PBXNativeTarget "SearchMovies" */;
+			buildConfigurationList = 505419432C248B5600996A48 /* Build configuration list for PBXNativeTarget "SearchHeroes" */;
 			buildPhases = (
 				5054192B2C248B5300996A48 /* Sources */,
 				5054192C2C248B5300996A48 /* Frameworks */,
@@ -88,9 +139,9 @@
 			);
 			dependencies = (
 			);
-			name = SearchMovies;
+			name = SearchHeroes;
 			productName = SearchMovies;
-			productReference = 5054192F2C248B5300996A48 /* SearchMovies.app */;
+			productReference = 5054192F2C248B5300996A48 /* SearchHeroes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +159,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5054192A2C248B5300996A48 /* Build configuration list for PBXProject "SearchMovies" */;
+			buildConfigurationList = 5054192A2C248B5300996A48 /* Build configuration list for PBXProject "SearchHeroes" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +172,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5054192E2C248B5300996A48 /* SearchMovies */,
+				5054192E2C248B5300996A48 /* SearchHeroes */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5043FBE52C301AFF00130C77 /* NetworkManager.swift in Sources */,
 				50EA91352C282CDC008F6779 /* MoviesModel.swift in Sources */,
 				505419372C248B5300996A48 /* MainViewController.swift in Sources */,
 				50EA91372C282E4E008F6779 /* MovieCollectionViewCell.swift in Sources */,
@@ -302,7 +354,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MFZ792P5NV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SearchMovies/Info.plist;
+				INFOPLIST_FILE = SearchHeroes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -313,7 +365,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.z-liya.TestingApp.SearchMovies";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.z-liya.TestingApp.SearchHeroes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -333,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MFZ792P5NV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SearchMovies/Info.plist;
+				INFOPLIST_FILE = SearchHeroes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -344,7 +396,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.z-liya.TestingApp.SearchMovies";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.z-liya.TestingApp.SearchHeroes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -358,7 +410,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5054192A2C248B5300996A48 /* Build configuration list for PBXProject "SearchMovies" */ = {
+		5054192A2C248B5300996A48 /* Build configuration list for PBXProject "SearchHeroes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				505419412C248B5600996A48 /* Debug */,
@@ -367,7 +419,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		505419432C248B5600996A48 /* Build configuration list for PBXNativeTarget "SearchMovies" */ = {
+		505419432C248B5600996A48 /* Build configuration list for PBXNativeTarget "SearchHeroes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				505419442C248B5600996A48 /* Debug */,

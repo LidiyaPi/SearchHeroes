@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  SearchMovies
+//  SearchHeroes
 //
 //  Created by Лидия Пятаева on 20.06.2024.
 //

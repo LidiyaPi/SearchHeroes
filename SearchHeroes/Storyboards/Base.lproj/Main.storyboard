@@ -29,8 +29,23 @@
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5bl-mF-92a">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgB-kS-4n2">
+                                            <rect key="frame" x="123" y="62" width="54.333333333333329" height="27.666666666666664"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jgB-kS-4n2" firstAttribute="centerY" secondItem="5bl-mF-92a" secondAttribute="centerY" id="HiM-L7-u5i"/>
+                                        <constraint firstItem="jgB-kS-4n2" firstAttribute="centerX" secondItem="5bl-mF-92a" secondAttribute="centerX" id="lEW-qp-kEe"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <connections>
+                                    <outlet property="genreLabel" destination="jgB-kS-4n2" id="CkL-Io-o7v"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -41,7 +56,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppq-Ld-UfU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1092" y="-31"/>
+            <point key="canvasLocation" x="-1092.3664122137404" y="-31.690140845070424"/>
         </scene>
     </scenes>
     <resources>
